@@ -26,7 +26,7 @@
 ### Links
 
 - Solution URL: [GIT_URL](https://github.com/MR-M4N1/Order_summary_card)
-- Live Site URL: [GIT_LIV]()
+- Live Site URL: [GIT_LIV](https://mr-m4n1.github.io/Order_summary_card/)
 
 
 ### Built with
