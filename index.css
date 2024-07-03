@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+:root {
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+}
+
+p,
+a,
+span {
+    font-family: "Red Hat Display";
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    border-radius: 16px;
+
+}
+
+.music_enjoyer_img {
+    width: 100%;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.description {
+    color: var(--Desaturated-blue);
+    font-size: 14px;
+    max-width: 230px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.user_Infobox {
+    display: flex;
+    width: 210px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--Very-pale-blue);
+    margin-bottom: 14px;
+}
+
+.music_icon {
+    width: 40px;
+}
+
+.user_name {
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.user_CPY {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.change_anchor {
+    color: var(--Bright-blue);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.change_anchor:active{
+    text-decoration: none;
+    opacity: .7;
+}
+
+.user_judicialbox {
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+}
+
+.confirmation_anchor {
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+    background-color: var(--Bright-blue);
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 10px 31px -12px var(--Bright-blue);
+}
+
+.confirmation_anchor:active{
+    opacity: .7;
+}
+
+.refusal_anchor {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    font-weight: 900;
+    font-size: 14px;
+    margin: 19px 0;
+}
+
+.refusal_anchor:active{
+    color: var(--Dark-blue);
+}
+
+.attribution {
+    font-size: 11px;
+    font-family: "red hat display";
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+}
+
+.attribution a {
+    color: var(--Bright-blue);
+    font-weight: 500;
+}
+
+@media screen and (min-width:321px) and (max-width:375px) {
+    main {
+        width: 80%;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .description {
+        max-width: 300px;
+    }
+
+    .user_Infobox {
+        width: 250px;
+    }
+
+    .user_judicialbox {
+        margin-left: -55px;
+    }
+
+    .confirmation_anchor {
+        width: 165px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .refusal_anchor {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:425px) {
+
+    body {
+        background-size: 420px;
+    }
+
+    main {
+        width: 75%;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .description {
+        max-width: 300px;
+    }
+
+    .user_Infobox {
+        width: 250px;
+    }
+
+    .confirmation_anchor {
+        width: 165px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .refusal_anchor {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:426px) {
+
+    body {
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-size: 1360px;
+    }
+   
+    main {
+        width: 300px;
+    }
+
+    .description{
+        line-height: 17px;
+        font-size: 12px;
+        font-weight: 500;
+        max-width: 220px;
+        padding: 0 40px;
+    }
+
+    .user_Infobox {
+        width: 220px;
+        padding: 15px;
+    }
+
+    .confirmation_anchor {
+        width: 165px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .refusal_anchor {
+        font-size: 12px;
+    }
+
+    .music_icon {
+        width: 33px;
+    }
+    
+    .user_judicialbox {
+        margin-left: -40px;
+    }
+
+}
